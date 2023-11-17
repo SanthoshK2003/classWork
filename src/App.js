@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ComposedTextField from "./Components/Form"; 
+import ControlledCheckbox from "./Components/Checkbox"; 
+import Navbar from "./Components/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+export default function My()
+{
+  return(
+    <>
+    <img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hello" height="300px" width="1800px"></img>
+    <Navbar/>
+    <center>
+    <ComposedTextField/>
+    <ControlledCheckbox/>
+    </center>
+    <img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hello" height="300px" width="1800px"></img>
+    </>
   );
 }
-
-export default App;
